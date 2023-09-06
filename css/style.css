@@ -601,3 +601,61 @@ footer section .redes i{
         width: 60%;
     }
 }
+
+@media (max-width: 410px) {
+    header .logo{
+        font-size: 32px;
+    }
+
+    .banner h1{
+        font-size: 28px;
+    }
+
+    .banner p{
+        font-size: 14px;
+    }
+
+    .cards{
+        padding: 10px;
+    }
+
+    .cards .card p{
+        font-size: 14px;
+    }
+
+    .nosotros{
+        padding: 10px;
+    }
+
+    .nosotros .imagenes .imgs2{
+        display: none;
+    }
+
+    .nosotros .descripcion p{
+        font-size: 14px;
+    }
+
+    .nuestro-menu{
+        padding: 10px;
+    }
+
+    .plato .plato-descripcion p{
+        font-size: 14px;
+    }
+
+    .formulario{
+        padding: 10px;
+    }
+
+    .formulario form article .input-1{
+        flex-direction: column;
+    }
+
+    .formulario form article .input-1 div{
+        width: 100%;
+    }
+
+    .nuestro-equipo{
+        padding: 10px;
+    }
+}
