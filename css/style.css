@@ -1,0 +1,603 @@
+:root{
+    --color-principal:#fea116;
+    --color-secundario:#0f172b;
+    --color-terciario:#141414;
+    --color-fondo:#f1f8ff;
+    --color-letra-pricipal: #fff;
+    --color-fondo-II:#f1f8ff;
+    --color-fondo-III:#0f172b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    background-color: var(--color-terciario);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo{
+    color: var(--color-principal);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header .btn-menu{
+    display: none;
+    font-size: 36px;
+    color: var(--color-letra-pricipal);
+}
+
+header nav a{
+    color: var(--color-letra-pricipal);
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.banner{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/bg-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-letra-pricipal);
+    padding: 20px 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+main{
+    background-color: var(--color-fondo-II);
+}
+
+.banner h1{
+    font-size: 54px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.banner p{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.cards .card{
+    background-color: var(--color-letra-pricipal);
+    border-radius: 15px;
+    width: 40vh;
+    height: 350px;
+    padding: 20px;
+}
+
+.card i{
+    color: var(--color-principal);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.nosotros .imagenes{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nosotros .imagenes .imgs1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 100px;
+    padding-right: 20px;
+}
+
+.nosotros .imagenes .imgs1 .img-g{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.nosotros .imagenes .imgs1 .img-p{
+    width: 200px;
+    height: 200px;
+}
+
+.nosotros .imagenes .imgs2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.nosotros .imagenes .imgs2 .img-g{
+    width: 300px;
+    height: 300px;
+}
+
+.nosotros .imagenes .imgs2 .img-p{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.nosotros .descripcion{
+    width: 50%;
+    padding: 10px 0px 0px 50px;
+}
+
+.nosotros .descripcion h3{
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.nosotros .descripcion h2{
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.nosotros .descripcion h2 i{
+    color: var(--color-principal);
+}
+
+.nosotros .descripcion p{
+    font-size: larger;
+    font-family: 'Heebo', sans-serif;
+}
+
+.nuestro-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.nuestro-menu h3{
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.nuestro-menu h2{
+    margin-bottom: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.nuestro-menu .platos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Heebo', sans-serif;
+}
+
+.nuestro-menu .platos .plato{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.plato img{
+    width: 125px;
+    height: 125px;
+}
+
+.plato .plato-descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.plato .plato-descripcion div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--color-terciario);
+    padding-bottom: 10px;
+}
+
+.plato .plato-descripcion div .titulo{
+    font-weight: bold;
+}
+
+.plato .plato-descripcion div .precio{
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-fondo-III);
+}
+
+.formulario form{
+    width: 50%;
+    padding: 10px 25px;
+}
+
+.formulario form h3{
+    color: var(--color-principal);
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.formulario form h2{
+    margin-bottom: 20px;
+    color: var(--color-letra-pricipal);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.formulario form article{
+    color: var(--color-letra-pricipal);
+    font-family: 'Heebo', sans-serif;
+}
+
+.formulario form article .input-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario form article .input-1 div{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form article .input-1 div input{
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.formulario form article .input-2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    color: var(--color-letra-pricipal);
+}
+
+.formulario form article .input-2 textarea{
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 10px 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.formulario form article .input-2 button{
+    background-color: var(--color-principal);
+    color: var(--color-letra-pricipal);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+.nuestro-equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px;
+}
+
+.nuestro-equipo .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nuestro-equipo .titulo h3{
+    color: var(--color-principal);
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.nuestro-equipo .titulo h2{
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.nuestro-equipo .cards-cheff{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nuestro-equipo .cards-cheff .cheff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-letra-pricipal);
+    border-radius: 5%;
+    width: 20%;
+    padding: 45px 10px;
+}
+
+.nuestro-equipo .cards-cheff .cheff img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.nuestro-equipo .cards-cheff .cheff p{
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: var(--color-fondo-III);
+    padding: 20px 30px;
+}
+
+footer section{
+    width: 20%;
+}
+
+footer section h4{
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+footer section article{
+    color: var(--color-letra-pricipal);
+    font-family: 'Heebo', sans-serif;
+}
+
+footer section article a{
+    color: var(--color-letra-pricipal);
+}
+
+footer section .contactos i{
+    margin-right: 5px;
+}
+
+footer section .redes{
+    display: flex;
+    align-items: flex-start;
+}
+
+footer section .redes i{
+    font-size: 32px;
+    margin-right: 15px;
+}
+
+/*@media screen and(min-width: 992px) and (max-width: 1246px) {
+    .cards .card{
+        height: 1100px;
+    }
+}*/
+
+@media (max-width: 1245px) {
+    .cards{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards .card{
+        width: 35%;
+        height: 300px;
+        margin: 10px 0px;
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .nosotros .imagenes{
+        width: 80%;
+    }
+
+    .nosotros .imagenes .imgs1{
+        align-items: center;
+        padding: 0px;
+        padding-right: 5px;
+    }
+
+    .nosotros .imagenes .imgs2{
+        align-items: center;
+        padding: 0px;
+        padding-left: 5px;
+    }
+
+    .nosotros .imagenes .imgs1 .img-g{
+        width: 200px;
+        height: 200px;
+    }
+
+    .nosotros .imagenes .imgs2 .img-g{
+        width: 200px;
+        height: 200px;
+    }
+
+    .nosotros .descripcion{
+        width: 80%;
+        padding: 10px;
+    }
+
+    .formulario{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario form{
+        width: 80%;
+    }
+
+    .nuestro-equipo .cards-cheff .cheff{
+        width: 35%;
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards .card{
+        width: 55%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 0px 20px;
+    }
+
+    header .btn-menu{
+        display: block;
+    }
+
+    header .menu{
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-principal);
+        transform: translateX(-100%);
+        transition: all 0.3s;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .menu a{
+        display: block;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+
+    .banner h1{
+        font-size: 42px;
+    }
+
+    .banner p{
+        font-size: 16px;
+    }
+
+    .cards .card{
+        width: 55%;
+        height: auto;
+    }
+
+    .nosotros .descripcion p{
+        font-size: medium;
+    }
+
+    .nuestro-menu .platos .plato{
+        width: 80%;
+        font-size: medium;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .formulario img{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section{
+        width: 85%;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner h1{
+        font-size: 32px;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .nosotros .imagenes{
+        width: 90%;
+    }
+
+    .nosotros .descripcion{
+        width: 90%;
+    }
+
+    .nuestro-menu .platos .plato{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .plato img{
+        margin: 10px 0px;
+    }
+
+    .nuestro-equipo .cards-cheff .cheff{
+        width: 60%;
+    }
+}
