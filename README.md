@@ -53,4 +53,6 @@ Como parte de una **Beca en Bootcamp Full Stack - Rolling Code School**.
 
 ## 📬 Contacto
 
-📧 maxi.soriano.70.23@gmail.com
+Desarrollado por **Maximiliano Soriano** 🧑‍💻  
+📧 Email: [maxi.soriano.70.23@gmail.com](mailto:maxi.soriano.70.23@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/maximilianosoriano](https://www.linkedin.com/in/maximiliano-soriano/)
